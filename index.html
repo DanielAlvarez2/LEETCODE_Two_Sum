@@ -10,6 +10,23 @@
     <h2>Two Sum</h2>
 
     <img src="screenshot.jpg">
-    
+
+    <script>
+        let nums = [3,3]
+        let target = 6
+        document.write(`nums = [${nums}]<br>`)
+        document.write(`target = ${target}<br>`)
+
+        var twoSum = function(nums, target){
+            let a=0
+            let b=1
+            for (let a=0;a<nums.length-1;a++){
+                if (nums[a] + nums[b] == target) return [a,b]
+                if (b<=nums.length) b++
+            }
+        }
+
+        document.write(`Output: [${twoSum(nums,target)}]`)
+    </script>
 </body>
 </html>
